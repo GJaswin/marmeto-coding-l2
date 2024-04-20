@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
+  font-family: 'Inter', sans-serif;
 }
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
+
+hr {
+  width: 100%;
 }
+
 a {
-  display: inline-block;
   color: lightgrey;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -30,7 +31,171 @@ a:hover {
   transform: scale(1.03);
   text-decoration: none;
 }
+
 a:active {
   transform: scale(0.98);
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+div.container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 20% 0;
+}
+
+div.row {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+div.col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  align-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 10px;
+}
+
+div.displaypic {
+  width: 100%;
+}
+
+
+div.thumbnails {
+  display: flex;
+  width: 100%;
+}
+
+div.thumbnails div {
+  padding: 10px;
+}
+
+div.colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.colors p {
+  width: 100%;
+}
+
+div.colors button  {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+div.colors .yellow {
+  background-color: #ECDECC;
+
+}
+
+div.colors .pink {
+  background-color: #FFD3F8;
+}
+
+div.colors .blue {
+  background-color: #BBC1F8;
+
+}
+
+div.colors .green {
+  background-color: #BBD278;
+}
+
+div.sizes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.sizes p {
+  width: 100%;
+}
+
+div.sizes form input[type=radio] {
+  width: 18px;
+  height: 18px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+
+div.sizes form {
+  display: flex;
+}
+
+div.sizes form label {
+  margin-right: 10px;
+}
+
+div.sizes form div {
+  margin: 8px;
+  background-color: #d8d8d8;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+div.cart {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  margin-top: 40px;
+}
+
+div.cart .addtocart {
+  width: 60%;
+  margin: 20px;
+  background-color: #444ea6;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.cart .qty {
+  background-color: #d8d8d8;
+  border-radius: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 20%;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ #cartmsg {
+  width: 100%;
+  padding: 10px;
+  margin:10px;
+  background-color: #BBD278;
+  color:#293603;
+  font-weight: bold;
+  border: 3px solid #ffd13b;
+  text-align: center;
+  display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .col {
+        flex-basis: 100%; 
+    }
+}

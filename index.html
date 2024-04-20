@@ -5,17 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
     <title>Coding Assesment L2 boilerplate</title>
 
 </head>
 
 <body>
-    <!-- Your code goes here -->
     <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+        <div class="row">
+            <div class="col">
+                <div class="displaypic">
+                    <img src="img/shirt1.jpg" alt="">
+                </div>
+
+                <div class="thumbnails">
+                    <div><img src="img/shirt1.jpg" alt=""></div>
+
+                    <div><img src="img/shirt1.jpg" alt=""></div>
+
+                    <div><img src="img/shirt1.jpg" alt=""></div>
+
+                    <div><img src="img/shirt1.jpg" alt=""></div>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div>
+                    <h4>Marmeto</h4>
+                    <h2>Embrace Sideboard</h2>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h2 id="offerprice"></h2><span id="offerperc"></span>
+                    <p id="initprice">$19999.00</p>
+                </div>
+                <hr>
+
+                <div class="colors">
+                    <p>Choose a Color</p>
+                    <button class="yellow" onclick="setColor('yellow')"></button>
+                    <button class="green" onclick="setColor('green')"></button>
+                    <button class="blue" onclick="setColor('blue')"></button>
+                    <button class="pink" onclick="setColor('pink')"></button>
+                </div>
+                <hr>
+
+                <div class="sizes">
+                    <p>Choose a Size</p>
+                    <form id="sizeForm">
+                        <div>
+                            <input type="radio" name="size" value="Small" onchange="setSize()"><label>Small</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="size" value="Medium" onchange="setSize()"><label>Medium</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="size" value="Large" onchange="setSize()"><label>Large</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="size" value="Extra Large" onchange="setSize()"><label>Extra Large</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="size" value="XXL" onchange="setSize()"><label>XXL</label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="cart">
+                    <div class="qty"><button onclick="qtyminus()">-</button><span id="qtyshow">1</span><button onclick="qtyplus()">+</button></div>
+                    <button class="addtocart" id="#addtocart" onclick="addMsg()">
+                        <p>Add to Cart</p>
+                    </button>
+                </div>
+                <div id="cartmsg" ></div>
+                <hr>
+                <div class="desc">
+                    <p>The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection
+                        and look great, this storage solution is both functional and attractive. It fits seamlessly into
+                        any home decor, with clean lines and a timeless look. Crafted from premium materials for a
+                        combination of style, durability, and reliability.</p>
+                </div>
+
+
+            </div>
+        </div>
     </div>
-    <!-- Happy coding 😊 -->
     <script src="./script.js"></script>
 </body>
 
