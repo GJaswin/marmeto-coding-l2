@@ -193,6 +193,11 @@ div.cart .qty {
   display: none;
 }
 
+footer {
+  padding: 20px;
+  font-weight: bold;
+}
+
 
 @media screen and (max-width: 1024px) {
     .col {

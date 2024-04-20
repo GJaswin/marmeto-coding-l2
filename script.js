@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
 let colorChoice = "";
 
 let sizeChoice = "";
@@ -51,4 +50,3 @@ function addMsg() {
 
 
 
-});
