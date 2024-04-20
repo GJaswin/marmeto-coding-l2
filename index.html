@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col">
                 <div class="displaypic">
-                    <img src="img/shirt1.jpg" alt="">
+                    <img src="img/shirt1.jpg" id="dp" alt="">
                 </div>
 
                 <div class="thumbnails">
@@ -30,7 +30,7 @@
             </div>
 
             <div class="col">
-                <div>
+                <div class="product">
                     <h4>Marmeto</h4>
                     <h2>Embrace Sideboard</h2>
                 </div>
@@ -41,17 +41,17 @@
                     <div class="offers">
                         <h2 id="offerprice"></h2>
                         <p id="offerperc"></p>
+                        <p id="initprice">$19999.00</p>
                     </div>
-                    <p id="initprice">$19999.00</p>
                 </div>
                 <hr>
 
                 <div class="colors">
                     <p>Choose a Color</p>
-                    <button class="yellow" onclick="setColor('yellow')"></button>
-                    <button class="green" onclick="setColor('green')"></button>
-                    <button class="blue" onclick="setColor('blue')"></button>
-                    <button class="pink" onclick="setColor('pink')"></button>
+                    <button class="yellow" onclick="setColor('Yellow')"></button>
+                    <button class="green" onclick="setColor('Green')"></button>
+                    <button class="blue" onclick="setColor('Blue')"></button>
+                    <button class="pink" onclick="setColor('Pink')"></button>
                 </div>
                 <hr>
 
@@ -81,6 +81,7 @@
                     <div class="qty"><button onclick="qtyminus()">-</button><span id="qtyshow">1</span><button
                             onclick="qtyplus()">+</button></div>
                     <button class="addtocart" id="#addtocart" onclick="addMsg()">
+                        <box-icon name="shopping-bag" color="white"></box-icon>
                         <p>Add to Cart</p>
                     </button>
                 </div>
@@ -99,6 +100,8 @@
     </div>
 
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </body>
 
 </html>

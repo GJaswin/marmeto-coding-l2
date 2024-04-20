@@ -39,12 +39,19 @@ function setSize() {
 }
 
 
+
+
 function addMsg() {
+    if (sizeChoice && colorChoice) {
 
-    const msgbox = document.getElementById("cartmsg");
-    msgbox.innerHTML = `${qty} Embrace Sideboard with Color ${colorChoice} and size ${sizeChoice} Added to Cart`;
-    msgbox.style.display = "block";
-
+        const msgbox = document.getElementById("cartmsg");
+        msgbox.innerHTML = `${qty} Embrace Sideboard with Color ${colorChoice} and Size ${sizeChoice} added to cart`;
+        msgbox.style.display = "block";
+    } else {
+        const msgbox = document.getElementById("cartmsg");
+        msgbox.innerHTML = "Select your color and size preferences";
+        msgbox.style.display="block";
+    }
 
 }
 
