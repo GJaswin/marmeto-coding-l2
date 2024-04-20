@@ -92,10 +92,11 @@ div.colors p {
   width: 100%;
 }
 
-div.colors button  {
+div.colors button {
   width: 50px;
   height: 50px;
   margin: 10px;
+  border: none;
 }
 
 div.colors .yellow {
@@ -103,8 +104,18 @@ div.colors .yellow {
 
 }
 
+div.colors .yellow:focus {
+  outline: 4px solid #ECDECC;
+  outline-offset: 5px;
+}
+
 div.colors .pink {
   background-color: #FFD3F8;
+}
+
+div.colors .pink:focus {
+  outline: 4px solid #FFD3F8;
+  outline-offset: 5px;
 }
 
 div.colors .blue {
@@ -112,8 +123,18 @@ div.colors .blue {
 
 }
 
+div.colors .blue:focus {
+  outline: 4px solid #BBC1F8;
+  outline-offset: 5px;
+}
+
 div.colors .green {
   background-color: #BBD278;
+}
+
+div.colors .green:focus {
+  outline: 4px solid #BBD278;
+  outline-offset: 5px;
 }
 
 div.sizes {
@@ -130,6 +151,7 @@ div.sizes form input[type=radio] {
   height: 18px;
   vertical-align: top;
   margin-right: 10px;
+  accent-color: #444ea6;
 }
 
 
@@ -139,11 +161,13 @@ div.sizes form {
 
 div.sizes form label {
   margin-right: 10px;
+  color: #555555;
+  font-weight: 500;
 }
 
 div.sizes form div {
   margin: 8px;
-  background-color: #d8d8d8;
+  background-color: #ececec;
   border-radius: 10px;
   padding: 5px;
 }
@@ -169,8 +193,21 @@ div.cart .addtocart {
   align-items: center;
 }
 
+div.cart button {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444ea6;
+}
+
+
 div.cart .qty {
-  background-color: #d8d8d8;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444ea6;
+  background-color: #ececec;
   border-radius: 2em;
   padding-left: 10px;
   padding-right: 10px;
@@ -181,23 +218,55 @@ div.cart .qty {
   align-items: center;
 }
 
- #cartmsg {
+#cartmsg {
   width: 100%;
   padding: 10px;
-  margin:10px;
+  margin: 10px;
   background-color: #BBD278;
-  color:#293603;
+  color: #293603;
   font-weight: bold;
   border: 3px solid #ffd13b;
   text-align: center;
   display: none;
 }
 
+div.prices {
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+div.offers {
+  display: flex;
+  align-items: center;
+}
+
+h2#offerprice {
+  font-weight: bold;
+  font-size: 32px;
+  color: #444ea6;
+  margin-right: 10px;
+}
+
+p#initprice {
+  text-decoration: line-through;
+  color: #939393;
+  font-size: 24px;
+}
+
+p#offerperc {
+  color: #ff4646;
+  font-size: 24px;
+
+}
+
+div.desc p {
+  color: #a2a2a2;
+  line-height: 1.6;
+}
 
 
 @media screen and (max-width: 1024px) {
-    .col {
-        flex-basis: 100%; 
-    }
+  .col {
+    flex-basis: 100%;
+  }
 }

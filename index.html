@@ -37,8 +37,11 @@
 
                 <hr>
 
-                <div>
-                    <h2 id="offerprice"></h2><span id="offerperc"></span>
+                <div class="prices">
+                    <div class="offers">
+                        <h2 id="offerprice"></h2>
+                        <p id="offerperc"></p>
+                    </div>
                     <p id="initprice">$19999.00</p>
                 </div>
                 <hr>
@@ -65,7 +68,8 @@
                             <input type="radio" name="size" value="Large" onchange="setSize()"><label>Large</label>
                         </div>
                         <div>
-                            <input type="radio" name="size" value="Extra Large" onchange="setSize()"><label>Extra Large</label>
+                            <input type="radio" name="size" value="Extra Large" onchange="setSize()"><label>Extra
+                                Large</label>
                         </div>
                         <div>
                             <input type="radio" name="size" value="XXL" onchange="setSize()"><label>XXL</label>
@@ -74,12 +78,13 @@
                 </div>
 
                 <div class="cart">
-                    <div class="qty"><button onclick="qtyminus()">-</button><span id="qtyshow">1</span><button onclick="qtyplus()">+</button></div>
+                    <div class="qty"><button onclick="qtyminus()">-</button><span id="qtyshow">1</span><button
+                            onclick="qtyplus()">+</button></div>
                     <button class="addtocart" id="#addtocart" onclick="addMsg()">
                         <p>Add to Cart</p>
                     </button>
                 </div>
-                <div id="cartmsg" ></div>
+                <div id="cartmsg"></div>
                 <hr>
                 <div class="desc">
                     <p>The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection
@@ -92,7 +97,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="./script.js"></script>
 </body>
 
